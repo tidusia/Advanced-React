@@ -1,16 +1,23 @@
-import Nav from '../Nav';
+import Nav from "../Nav";
+import Link from "next/link";
+
+import { Logo, StyledHeader } from "./styles";
 
 const Header = () => (
-  <div>
+  <StyledHeader>
     <div className="bar">
-      <a href="">Sick Fits</a>
+      <Logo>
+        <Link href="/">
+          <a>Sick Fits</a>
+        </Link>
+      </Logo>
       <Nav />
     </div>
     <div className="sub-bar">
       <p>Search</p>
     </div>
     <div>Cart</div>
-  </div>
+  </StyledHeader>
 );
 
 export default Header;
