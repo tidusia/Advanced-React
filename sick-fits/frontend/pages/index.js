@@ -1,7 +1,3 @@
-const Home = () => (
-  <p>
-    <div>Hey</div>
-  </p>
-);
+const Home = () => <p>INDEX</p>;
 
 export default Home;
